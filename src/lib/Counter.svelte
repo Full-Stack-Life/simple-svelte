@@ -1,7 +1,7 @@
 <script>
   import { count } from '../store/store';
 
-  let viewCount
+  let viewCount = 0
 
   count.subscribe(value => {
     viewCount = value
@@ -13,6 +13,7 @@
 
 </script>
 
+<!-- Esse evento atualiza diretamento o DOM -->
 <button on:click={increment}>
   My count is {viewCount}
 </button>

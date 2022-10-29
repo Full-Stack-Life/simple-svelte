@@ -7,6 +7,7 @@
   import Counter from './lib/Counter.svelte'
   import Hello from './lib/Hello.svelte'
   import Html from './lib/Html.svelte';
+  import Reactivity from './lib/Reactivity.svelte';
   import { count } from './store/store'
 
   let viewCount
@@ -28,4 +29,7 @@
   </div>
   <hr>
   <Html />
+  <hr>
+  <Reactivity prop="prop" prop1="prop1" prop2="Value" />
+  <Reactivity prop="prop" prop1="prop1" />
 </main>
